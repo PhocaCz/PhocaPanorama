@@ -1,0 +1,1 @@
+Phoca Panorama is Joomla! CMS extension. Component which displays panorama (krpano, street view) on website.
