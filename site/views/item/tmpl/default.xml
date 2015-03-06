@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+   <layout title="COM_PHOCAPANORAMA_ITEM_LAYOUT">
+      <message>
+         <![CDATA[COM_PHOCAPANORAMA_ITEM_LAYOUT_DESC]]>
+      </message>
+   </layout>
+
+   <name>COM_PHOCAPANORAMA_ITEM_LAYOUT</name>
+   <description>COM_PHOCAPANORAMA_ITEM_LAYOUT_DESC</description>
+   <fields name="request">
+      <fieldset name="request" addfieldpath="/administrator/components/com_phocapanorama/models/fields">
+
+         <field 
+            name="id" 
+            type="phocapanoramaitem" 
+            section="com_phocapanorama" 
+            class="inputbox"
+            default="0" 
+            label="COM_PHOCAPANORAMA_FIELD_SELECT_ITEM_LABEL" 
+            description="COM_PHOCAPANORAMA_FIELD_SELECT_ITEM_DESC" 
+            required="true"
+         />
+      </fieldset>
+   </fields>
+  
+
+</metadata>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension method="upgrade" type="component" version="3">
+	<name>com_phocapanorama</name>
+	<author>Jan Pavelka (www.phoca.cz)</author>
+	<creationDate>15/01/2014</creationDate>
+	<authorEmail></authorEmail>
+	<authorUrl>www.phoca.cz</authorUrl>
+	<copyright>Jan Pavelka</copyright>
+	<license>GNU/GPL</license>
+	<version>3.0.1</version>
+	<description>Phoca Panorama</description>
+	<scriptfile>install/script.php</scriptfile>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install/sql/mysql/install.utf8.sql</file>
+		</sql>
+	</install>
+
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">install/sql/mysql/uninstall.utf8.sql</file>
+		</sql>
+	</uninstall>
+
+	<update>
+		<schemas/>
+	</update>
+
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>phocapanorama.php</filename>
+		<filename>router.php</filename>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+
+	<media destination="com_phocapanorama" folder="media">
+		<filename>index.html</filename>
+		<folder>bootstrap</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+	</media>
+
+	<languages>
+		<language tag="en-GB" client="site">language/en-GB/en-GB.com_phocapanorama.ini</language>
+		<language tag="en-GB" client="site">language/en-GB/en-GB.com_phocapanorama.sys.ini</language>
+	</languages>
+
+	<administration>
+		<menu img="" link="option=com_phocapanorama">COM_PHOCAPANORAMA</menu>
+		<submenu>
+			<menu img="" alt="COM_PHOCAPANORAMA_CONTROLPANEL" view="phocapanoramacp" link="option=com_phocapanorama">COM_PHOCAPANORAMA_CONTROLPANEL</menu>
+			<menu img="" alt="COM_PHOCAPANORAMA_ITEMS" view="phocapanoramaitems" link="option=com_phocapanorama&amp;view=phocapanoramaitems">COM_PHOCAPANORAMA_ITEMS</menu>
+			<menu img="" alt="COM_PHOCAPANORAMA_CATEGORIES" view="phocapanoramacats" link="option=com_phocapanorama&amp;view=phocapanoramacats">COM_PHOCAPANORAMA_CATEGORIES</menu>
+			<menu img="" alt="COM_PHOCAPANORAMA_INFO" view="phocapanoramainfo" link="option=com_phocapanorama&amp;view=phocapanoramainfo">COM_PHOCAPANORAMA_INFO</menu>
+		</submenu>
+
+		<files folder="admin">
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>phocapanorama.php</filename>
+			<filename>phocapanorama.xml</filename>
+			<folder>controllers</folder>
+			<folder>help</folder>
+			<folder>helpers</folder>
+			<folder>install</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+
+		<languages>
+			<language tag="en-GB">language/en-GB/en-GB.com_phocapanorama.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_phocapanorama.sys.ini</language>
+		</languages>
+
+	</administration>
+</extension>
