@@ -8,8 +8,11 @@
  */
 defined('_JEXEC') or die();
 echo '<div id="ph-pp-item-box" class="pp-item-view'.$this->t['p']->get( 'pageclass_sfx' ).'">';
-if ( $this->t['p']->get( 'show_page_heading' ) ) { 
+
+if ( $this->t['p']->get( 'show_page_heading' ) ) {
 	echo '<h1>'. $this->escape($this->t['p']->get('page_heading')) . '</h1>';
+} else {
+	echo '<h1>'. $this->escape($this->item[0]->title) . '</h1>';
 }
 
 if (isset($this->category[0]->id) && ($this->t['display_back'] == 2 || $this->t['display_back'] == 3)) {
@@ -18,9 +21,9 @@ if (isset($this->category[0]->id) && ($this->t['display_back'] == 2 || $this->t[
 		$linkUpText = $this->category[0]->title;
 	} else {
 		$linkUp 	= false;
-		$linkUpText = false; 
+		$linkUpText = false;
 	}
-	
+
 	if ($linkUp && $linkUpText) {
 		echo '<div class="ph-top">'
 		.'<a class="btn btn-success" title="'.$linkUpText.'" href="'. $linkUp.'" ><span class="glyphicon glyphicon-arrow-left"></span> '.JText::_($linkUpText).'</a></div>';
@@ -32,15 +35,15 @@ if ( isset($this->item[0]->description) && $this->item[0]->description != '') {
 }
 
 if (!empty($this->item[0])) {
-	
+
 	if (isset($this->item[0]->iframe_link) && $this->item[0]->iframe_link != '' ) {
-		echo '<iframe style="width:'.$this->t['panorama_width'].';height:'.$this->t['panorama_height'].';border: 0px" src="'.htmlspecialchars($this->item[0]->iframe_link).'"></iframe>';
+		echo '<iframe style="width:'.$this->t['panorama_width'].';height:'.$this->t['panorama_height'].';border: 0px" src="'.htmlspecialchars($this->item[0]->iframe_link).'"  allowfullscreen=""></iframe>';
 	} else if ($this->t['display_method'] == 1) {
 		$tourAbs 	= $this->t['panoramapathabs'] . htmlspecialchars($this->item[0]->folder).'/'.$this->t['file_name'].'.html';
 		$tourRel 	= $this->t['panoramapathrel'] . htmlspecialchars($this->item[0]->folder).'/'.$this->t['file_name'].'.html';
-		echo '<iframe style="width:'.$this->t['panorama_width'].';height:'.$this->t['panorama_height'].';border: 0px" src="'.$tourRel.'"></iframe>';
+		echo '<iframe style="width:'.$this->t['panorama_width'].';height:'.$this->t['panorama_height'].';border: 0px" src="'.$tourRel.'"  allowfullscreen=""></iframe>';
 	} else {
-		
+
 		$this->document->setMetadata('viewport', 'target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0');
 		$this->document->setMetadata('apple-mobile-web-app-capable', 'yes');
 
@@ -52,7 +55,7 @@ if (!empty($this->item[0])) {
 		$tourAbs 	= $this->t['panoramapathabs'] . htmlspecialchars($this->item[0]->folder).'/'.$this->t['file_name'].'.js';
 		$tourRel 	= $this->t['panoramapathrel'] . htmlspecialchars($this->item[0]->folder).'/'.$this->t['file_name'].'.js';
 		$path 		= JURI::base(true). '/' . $this->t['panoramapathrel'] . htmlspecialchars($this->item[0]->folder);
-		
+
 		if (JFile::exists($tourAbs)) {
 			$this->document->addScript(JURI::root(true).'/'.$tourRel);
 			echo '<div id="ph-pano" style="width:'.$this->t['panorama_width'].';height:'.$this->t['panorama_height'].';">';
@@ -63,7 +66,7 @@ if (!empty($this->item[0])) {
 			echo '</script>'. "\n";
 			echo '</div>';
 		}
-	
+
 	}
 }
 echo '</div>';

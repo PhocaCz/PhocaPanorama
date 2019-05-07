@@ -1,0 +1,21 @@
+<updates>
+	<update>
+		<name><![CDATA[ Phoca Panorama ]]></name>
+		<description><![CDATA[ Phoca Panorama is Joomla! CMS component - it displays panoramic images or interactive virtual tours (e.g. made by krpano software) on Joomla! CMS sites. It includes categories view (list of categories), category view (list of panorama items) and items (panorama items) view. ]]></description>
+		<element>com_phocapanorama</element>
+		<type>component</type>
+		<version>3.0.3</version>
+		<infourl title="Phoca Panorama 3.0.3">http://www.phoca.cz/version/index.php?phocapanorama=3.0.3</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaPanorama/releases/download/3.0.3/com_phocapanorama_v3.0.3.zip</downloadurl>
+		</downloads>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer><![CDATA[ Phoca.cz ]]></maintainer>
+		<maintainerurl>https://www.phoca.cz/</maintainerurl>
+		<section>Updates</section>
+		<targetplatform name="joomla" version="3.9"/>
+		<client>1</client>
+	</update>
+</updates>

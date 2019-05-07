@@ -179,6 +179,8 @@ function PhocaPanoramaParseRoute($segments)
 			break;
 		}
 	}
+	
+	unset($segments[0]);
 	return $vars;
 }
 ?>

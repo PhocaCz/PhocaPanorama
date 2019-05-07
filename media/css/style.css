@@ -18,3 +18,40 @@
 .pp-item-view {
 	margin: 10px 0px;
 }
+
+
+/* equal Height */
+#ph-pp-categories-box.equalHeight .ph-pp-row,
+#ph-pp-category-box.equalHeight .ph-pp-row{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+
+}
+#ph-pp-categories-box.equalHeight .ph-pp-col, 
+#ph-pp-category-box.equalHeight .ph-pp-col{
+	margin-bottom: 1em;
+}
+
+#ph-pp-categories-box.equalHeight .ph-pp-col .ph-pp-thumbnail,
+#ph-pp-category-box.equalHeight .ph-pp-col .ph-pp-thumbnail {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 100%;
+}
+
+#ph-pp-categories-box.equalHeight .ph-pp-col .ph-pp-thumbnail .caption,
+#ph-pp-category-box.equalHeight .ph-pp-col .ph-pp-thumbnail .caption {
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: flex-end;
+	/*align-items: flex-start;*/
+	algin-content: flex-end;
+}
+#ph-pp-categories-box.equalHeight .ph-pp-col .ph-pp-thumbnail .caption .pull-right,
+#ph-pp-category-box.equalHeight .ph-pp-col .ph-pp-thumbnail .caption .pull-right {
+	text-align: right;
+}

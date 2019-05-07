@@ -1,0 +1,54 @@
+{
+	"author": "Jan Pavelka (www.phoca.cz)",
+	"authorUrl": "https://www.phoca.cz",
+	"copyright": "Jan Pavelka",
+	"license": "GNU/GPL",
+	"projectName": "PhocaPanorama",
+	"extensionName": "Phoca Panorama",
+	"projectInitials" : "PP",
+	"description": "Phoca Panorama is Joomla! CMS component - it displays panoramic images or interactive virtual tours (e.g. made by krpano software) on Joomla! CMS sites. It includes categories view (list of categories), category view (list of panorama items) and items (panorama items) view.",
+	"projectUrl": "https://www.phoca.cz/phocapanorama",
+	"projectDocumentationUrl": "https://www.phoca.cz/documentation/category/109-phoca-panorama-component",
+	"projectMainComponent": "Phoca Panorama",
+	"projectMainComponentInfoUrl": "https://www.phoca.cz/project/phocapanorama-joomla-panorama",
+	"projectDemo" : {
+		"Demo": "https://youtu.be/3A6ljjkkL6M"
+	},
+	"projectColor": "#ff7f00",
+	"menu": {
+		"main":{
+			"0" : {
+				"image": "",
+				"view": "",
+				"link": "option=com_phocapanorama",
+				"title": "COM_PHOCAPANORAMA"
+			}
+		},
+		"submenu": {
+			"0" : {
+				"image": "",
+				"view": "phocapanoramacp",
+				"link": "option=com_phocapanorama",
+				"title": "COM_PHOCAPANORAMA_CONTROLPANEL"
+			},
+			"1" : {
+				"image": "",
+				"view": "phocapanoramaitems",
+				"link": "option=com_phocapanorama&amp;view=phocapanoramaitems",
+				"title": "COM_PHOCAPANORAMA_ITEMS"
+			},
+			"2" : {
+				"image": "",
+				"view": "phocapanoramacats",
+				"link": "option=com_phocapanorama&amp;view=phocapanoramacats",
+				"title": "COM_PHOCAPANORAMA_CATEGORIES"
+			},
+			"3" : {
+				"image": "",
+				"view": "phocapanoramainfo",
+				"link": "option=com_phocapanorama&amp;view=phocapanoramainfo",
+				"title": "COM_PHOCAPANORAMA_INFO"
+			}
+		}
+	}
+}

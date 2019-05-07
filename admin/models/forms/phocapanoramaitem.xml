@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+
+	<fieldset addfieldpath="/administrator/components/com_phocapanorama/models/fields">
+
+<field name="id" type="text" default="0" label="JGLOBAL_FIELD_ID_LABEL" required="true" readonly="true" class="readonly" />
+
+
+<field name="title" type="text" class="inputbox" size="40" label="COM_PHOCAPANORAMA_FIELD_TITLE_LABEL" description="COM_PHOCAPANORAMA_FIELD_TITLE_DESC"  />
+
+<field name="alias" type="text" class="inputbox" size="40" label="COM_PHOCAPANORAMA_FIELD_ALIAS_LABEL" description="COM_PHOCAPANORAMA_FIELD_ALIAS_DESC" />
+
+<field name="catid" type="phocapanoramacategory" label="COM_PHOCAPANORAMA_FIELD_CATEGORY_LABEL" description="COM_PHOCAPANORAMA_FIELD_CATEGORY_DESC" class="inputbox" required="true" />
+
+<field name="image" type="media"  label="COM_PHOCAPANORAMA_FIELD_IMAGE_LABEL"  description="COM_PHOCAPANORAMA_FIELD_IMAGE_CAT_LABEL" class="inputbox" size="40" />
+
+<field name="ordering" type="PhocaPanoramaOrdering" table="file" class="inputbox" label="COM_PHOCAPANORAMA_FIELD_ORDERING_LABEL" description="COM_PHOCAPANORAMA_FIELD_ORDERING_DESC" />
+
+<field name="folder" type="text" class="inputbox" size="40" label="COM_PHOCAPANORAMA_FIELD_FOLDER_LABEL" description="COM_PHOCAPANORAMA_FIELD_FOLDER_DESC" />
+
+<field name="iframe_link" type="textarea" label="COM_PHOCAPANORAMA_FIELD_IFRAME_LINK_LABEL" description="COM_PHOCAPANORAMA_FIELD_IFRAME_LINK_DESC" rows="2" cols="26" default="" />
+
+<field name="image" type="media"  label="COM_PHOCAPANORAMA_FIELD_IMAGE_LABEL"  description="COM_PHOCAPANORAMA_FIELD_IMAGE_ITEM_LABEL" class="inputbox" size="40" />
+
+<!--<field name="access" type="accesslevel" label="JFIELD_ACCESS_LABEL" description="JFIELD_ACCESS_DESC" class="inputbox" size="1" />-->
+
+
+<field name="description" type="editor" buttons="true" hide="pagebreak,readmore" class="inputbox" label="COM_PHOCAPANORAMA_FIELD_DESCRIPTION_LABEL" filter="JComponentHelper::filterText" description="COM_PHOCAPANORAMA_FIELD_DESCRIPTION_DESC" />
+
+<field name="metakey" type="textarea"
+			label="JField_Meta_Keywords_Label" description="JField_Meta_Keywords_Desc"
+			class="inputbox" rows="3" cols="30" />
+
+<field name="metadesc" type="textarea"
+	label="JField_Meta_Description_Label" description="JField_Meta_Description_Desc"
+	class="inputbox" rows="3" cols="30" />
+
+
+
+	</fieldset>
+
+
+	<fieldset name="publish" label="COM_PHOCAPANORAMA_GROUP_LABEL_PUBLISHING_DETAILS" >
+
+<field name="published" type="list" label="COM_PHOCAPANORAMA_FIELD_PUBLISHED_LABEL" description="COM_PHOCAPANORAMA_FIELD_PUBLISHED_DESC" class="inputbox" size="1" default="1">
+	<option value="1">JPUBLISHED</option>
+	<option	value="0">JUNPUBLISHED</option>
+</field>
+
+
+
+<field name="language" type="contentlanguage" label="JFIELD_LANGUAGE_LABEL" description="COM_PHOCAPANORAMA_FIELD_LANGUAGE_DESC" class="inputbox">
+	<option value="*">JALL</option>
+</field>
+
+<field name="date" type="Calendar" class="inputbox" label="COM_PHOCAPANORAMA_FIELD_DATE_LABEL" description="COM_PHOCAPANORAMA_FIELD_DATE_DESC" format="%Y-%m-%d %H:%M:%S" size="20" filter="user_utc" />
+
+<field name="hits" type="Text" class="inputbox" size="6" label="COM_PHOCAPANORAMA_FIELD_HITS_LABEL" description="COM_PHOCAPANORAMA_FIELD_HITS_DESC" />
+
+
+	</fieldset>
+
+	<fields name="metadata">
+<fieldset name="metadata" label="JGLOBAL_FIELDSET_METADATA_OPTIONS">
+</fieldset>
+</fields>
+
+
+</form>
