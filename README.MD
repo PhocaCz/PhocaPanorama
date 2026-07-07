@@ -1,65 +1,12 @@
+# ⚠️ This Project is Officially Archived
 
+This repository has been archived and is no longer actively maintained, developed, or supported by the Phoca Open Source Community. 
 
+### ℹ️ Important Notice
+* **Historical Reference Only:** This repository is kept online strictly for educational and historical purposes. The code is provided "as is" without any express or implied warranties.
+* **No Production Releases:** All pre-compiled production packages and ready-to-install releases have been permanently removed. This code is not intended to be deployed on live websites.
+* **No Security Updates:** No future security patches, bug fixes, or compatibility updates for newer Joomla versions will be provided.
 
+Thank you to everyone who contributed to this project over the years. 
 
-![Phoca Panorama](https://github.com/PhocaCz/PhocaPanorama/blob/master/phocapanorama.png)
-
-# Phoca Panorama
-
-
-
-Phoca Panorama is Joomla! CMS component - it displays panoramic images or interactive virtual tours (e.g. made by krpano software) on Joomla! CMS sites. It includes categories view (list of categories), category view (list of panorama items) and items (panorama items) view.
-
-
-
-## Project page
-
-[Phoca Panorama](https://www.phoca.cz/phocapanorama)
-
-[Phoca Panorama Info Page](https://www.phoca.cz/project/phocapanorama-joomla-panorama)
-
-
-
-## Documentation
-
-[Documentation](https://www.phoca.cz/documentation/category/109-phoca-panorama-component)
-
-
-
-## Support
-
-[Phoca Forum](https://www.phoca.cz/forum)
-
-:bell: [Phoca Forum RSS](https://www.phoca.cz/forum/app.php/feed)
-
-
-
-## News
-
-[Phoca News](https://www.phoca.cz/news)
-
-:bell: [Phoca News RSS](https://www.phoca.cz/news?format=feed&type=rss)
-
-:bell: [Phoca Latest Releases RSS](https://www.phoca.cz/download/feed/111?format=feed&type=rss)
-
-
-
-## Demo
-
-[Demo](https://youtu.be/3A6ljjkkL6M)
-
-
-
-## Version
-
-3.0.3
-
-
-
-## License
-
-GNU/GPL
-
-
-
-This project is open source project - feel free to contribute! Thank you.
+👉 If you have any questions, please visit the Phoca Forum: https://www.phoca.cz/forum
